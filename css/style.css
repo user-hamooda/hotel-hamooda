@@ -4,86 +4,91 @@
   --c-white: #fff;
 
   --c-eee: #eee;
-  --c-222: #222;
 
   --c-ddd: #ddd;
   --c-444: #444;
 }
 
+.c-blue {
+  color: var(--c-blue) !important;
+}
+
+.bg-blue {
+  background-color: var(--c-blue) !important;
+}
+
+.c-fff {
+  color: var(--c-white) !important;
+}
+
+.bg-fff {
+  background-color: var(--c-white) !important;
+}
+
+.c-000 {
+  color: var(--c-black) !important;
+}
+
+.bg-eee {
+  background-color: var(--c-eee) !important;
+}
+
+.c-ddd {
+  color: var(--c-ddd) !important;
+}
+
+.c-444 {
+  color: var(--c-444) !important;
+}
+
 /* start class */
+.fs-18px {
+  font-size: 18px;
+}
 body {
   font-family: "Poppins", "system-ui";
 }
-
 img {
   width: 100%;
   height: 100%;
 }
-
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--c-black);
 }
-
 .filter-brightness {
   filter: brightness(0.5);
 }
-
 /* end class */
 /* start navbar */
 .navbar {
-  box-shadow: 0 0 10px #444;
+  box-shadow: 0 0 10px var(--c-444);
   height: 65px;
-  background-color: #fff !important;
 }
-
-.navbar .navbar-brand {
-  color: var(--c-blue);
-}
-
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-
-.navbar .navbar-nav .nav-link {
-  color: var(--c-black);
-  font-size: 18px;
-}
-
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--c-blue);
+  color: var(--c-blue) !important;
 }
-
 /* end navbar */
 /* start carousel */
 .carousel-caption {
   bottom: 50%;
   transform: translateY(50%);
-  color: #fff;
 }
-
 /* end carousel */
 /* end facilities */
-.facilities .container .title h1 {
-  color: var(--c-black);
-}
-
-.facilities .container .title p {
-  color: var(--c-444);
-}
-
 .facilities-card .container {
-  background-color: #eee;
-  box-shadow: 0 0 10px #eee;
+  box-shadow: 0 0 10px var(--c-eee);
 }
-
 .facilities-card .container .icon {
   width: 40px;
   height: 40px;
-  color: #fff;
-  background-color: var(--c-blue);
+  /* color: var(--c-white); */
+  /* background-color: var(--c-blue); */
 }
 
 /* end facilities */
@@ -97,8 +102,8 @@ a {
 }
 
 .popular .popular-card .feat {
-  background-color: #eee;
-  box-shadow: 0 0 10px #eee;
+  background-color: var(--c-eee);
+  box-shadow: 0 0 10px var(--c-eee);
   transition: 0.3s;
 }
 
@@ -125,8 +130,8 @@ a {
 /* end popular */
 /* start pricing */
 .pricing .pricing-card .container {
-  background-color: #eee;
-  box-shadow: 0 0 10px #eee;
+  background-color: var(--c-eee);
+  box-shadow: 0 0 10px var(--c-eee);
   transition: 0.3s;
 }
 
@@ -137,33 +142,33 @@ a {
 .pricing .pricing-card .container .icon {
   width: 50px;
   height: 50px;
-  color: #fff;
+  color: var(--c-white);
   background-color: var(--c-blue);
 }
 
 .pricing .pricing-card .container .shop a {
   background: transparent;
-  color: #000;
+  color: var(--c-black);
   border: 2px solid var(--bs-blue);
 }
 
 .pricing .pricing-card .container .shop:hover a {
   background: var(--c-blue);
-  color: #fff;
+  color: var(--c-white);
 }
 
 /* end pricing */
 /* start about */
 .about .about-card .container {
-  background-color: #eee;
-  box-shadow: 0 0 10px #eee;
+  background-color: var(--c-eee);
+  box-shadow: 0 0 10px var(--c-eee);
 }
 
 /* end about */
 /* start blog */
 .blog .blog-card .feat {
-  background-color: #eee;
-  box-shadow: 0 0 10px #eee;
+  background-color: var(--c-eee);
+  box-shadow: 0 0 10px var(--c-eee);
   transition: 0.3s;
 }
 
@@ -181,6 +186,7 @@ a {
 .container footer li a:hover {
   color: var(--c-blue) !important;
 }
+
 /* end footer */
 
 /* start responsef */
