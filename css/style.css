@@ -2,9 +2,7 @@
   --c-blue: #0073ff;
   --c-black: #000;
   --c-white: #fff;
-
   --c-eee: #eee;
-
   --c-ddd: #ddd;
   --c-444: #444;
 }
@@ -42,77 +40,76 @@
 }
 
 /* start class */
+*:focus {
+  box-shadow: none !important;
+}
+
 .fs-18px {
   font-size: 18px;
 }
+
 body {
   font-family: "Poppins", "system-ui";
 }
+
 img {
   width: 100%;
   height: 100%;
 }
+
 a {
   text-decoration: none;
-  color: var(--c-black);
+  color: var(--c-black) !important;
 }
+
 .filter-brightness {
   filter: brightness(0.5);
 }
+
+.card-shadow {
+  box-shadow: 0 0 10px var(--c-eee);
+}
+
 /* end class */
 /* start navbar */
 .navbar {
   box-shadow: 0 0 10px var(--c-444);
   height: 65px;
 }
-.navbar .navbar-toggler:focus {
-  box-shadow: none;
-}
+
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link.active {
   color: var(--c-blue) !important;
 }
+
+.navbar-collapse {
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+}
+
 /* end navbar */
 /* start carousel */
 .carousel-caption {
   bottom: 50%;
   transform: translateY(50%);
 }
+
 /* end carousel */
 /* end facilities */
-.facilities-card .container {
-  box-shadow: 0 0 10px var(--c-eee);
-}
 .facilities-card .container .icon {
   width: 40px;
   height: 40px;
-  /* color: var(--c-white); */
-  /* background-color: var(--c-blue); */
 }
 
 /* end facilities */
 /* start popular */
-.popular .container .title h1 {
-  color: var(--c-black);
-}
-
-.popular .container .title p {
-  color: var(--c-444);
-}
-
 .popular .popular-card .feat {
-  background-color: var(--c-eee);
-  box-shadow: 0 0 10px var(--c-eee);
   transition: 0.3s;
 }
 
 .popular .popular-card .feat:hover {
   transform: scale(1.02);
-}
-
-.popular .popular-card .stars .price {
-  font-size: 18px;
 }
 
 .popular .popular-card .icons .icon {
@@ -124,14 +121,12 @@ a {
 }
 
 .popular .popular-card .icons .icon:hover a {
-  color: var(--c-blue);
+  color: var(--c-blue) !important;
 }
 
 /* end popular */
 /* start pricing */
 .pricing .pricing-card .container {
-  background-color: var(--c-eee);
-  box-shadow: 0 0 10px var(--c-eee);
   transition: 0.3s;
 }
 
@@ -142,33 +137,22 @@ a {
 .pricing .pricing-card .container .icon {
   width: 50px;
   height: 50px;
-  color: var(--c-white);
-  background-color: var(--c-blue);
 }
 
 .pricing .pricing-card .container .shop a {
   background: transparent;
-  color: var(--c-black);
+  /*  bootstrab */
   border: 2px solid var(--bs-blue);
 }
 
 .pricing .pricing-card .container .shop:hover a {
-  background: var(--c-blue);
-  color: var(--c-white);
+  background: var(--c-blue) !important;
+  color: var(--c-white) !important;
 }
 
 /* end pricing */
-/* start about */
-.about .about-card .container {
-  background-color: var(--c-eee);
-  box-shadow: 0 0 10px var(--c-eee);
-}
-
-/* end about */
 /* start blog */
 .blog .blog-card .feat {
-  background-color: var(--c-eee);
-  box-shadow: 0 0 10px var(--c-eee);
   transition: 0.3s;
 }
 
@@ -178,7 +162,7 @@ a {
 
 .blog .blog-card .more:hover a {
   text-decoration: underline;
-  color: var(--c-blue);
+  color: var(--c-blue) !important;
 }
 
 /* end blog */
@@ -188,7 +172,6 @@ a {
 }
 
 /* end footer */
-
 /* start responsef */
 @media (max-width:768px) {
   .title {
